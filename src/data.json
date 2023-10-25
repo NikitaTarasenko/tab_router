@@ -3,13 +3,13 @@
         {
             "id": "dummyTable",
             "title": "Dummy Table",
-            "order": 2,
+            "order": 1,
             "path": "tabs/dummyTable.js"
         },
         {
             "id": "dummyChart",
             "title": "Dummy Chart",
-            "order": 1,
+            "order": 2,
             "path": "tabs/dummyChart.js"
         },
         {

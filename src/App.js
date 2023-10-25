@@ -6,15 +6,15 @@ import { DummyList } from "./components/DummyList/index.js";
 import { DummyChart } from "./components/DummyChart/index.js";
 import { DummyTable } from "./components/DummyTable/index.js";
 import { ChartProvider } from "./providers/ChartProvider/ChartProvider";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import "./App.css";
 
 function App() {
   const navigate = useNavigate();
-
+  const location = useLocation();
   useEffect(() => {
-    if (data.tabs) {
+    if (data.tabs && location.pathname === "/") {
       let f = data.tabs.filter((el) => el.order === 1);
       navigate(`/${f[0].id}`);
     }
