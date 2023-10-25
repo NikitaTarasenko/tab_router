@@ -33,6 +33,7 @@ function App() {
     };
     return Content[element];
   };
+
   // ******ChartProvider used to load asynchronously libs when it's needed only*******
 
   return (
